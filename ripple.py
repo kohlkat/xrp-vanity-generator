@@ -81,7 +81,7 @@ __b58base = len(__b58chars)
 def b58encode(v):
     """ encode v, which is a string of bytes, to base58."""
 
-    long_value = 0L
+    long_value = 0
     for (i, c) in enumerate(v[::-1]):
         long_value += (256 ** i) * ord(c)
 
